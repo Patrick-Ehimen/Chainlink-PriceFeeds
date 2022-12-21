@@ -12,7 +12,8 @@ To use this project, you will need the following:
 
 # QuickStart
 
-```git clone https://github.com/Patrick-Ehimen/Chainlink-PriceFeeds
+```
+git clone https://github.com/Patrick-Ehimen/Chainlink-PriceFeeds
 cd Chainlink-PriceFeeds
 npm install
 ```
