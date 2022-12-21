@@ -37,7 +37,8 @@ To use this project, follow these steps:
 
 6. Compile and deploy the contracts to the Goerli testnet
 
-```npx hardhat compile
+```
+npx hardhat compile
 npx hardhat run scripts/deploy.js --network goerli
 ```
 
