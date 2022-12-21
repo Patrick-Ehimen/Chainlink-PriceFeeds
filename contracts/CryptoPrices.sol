@@ -3,6 +3,8 @@ pragma solidity ^0.8.9;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
+//import "./Priceconverter.sol";
+
 contract PriceFeeds {
     //declaring a state variables of type AggregatorV3Interface
     AggregatorV3Interface internal BTC_USD;
@@ -38,14 +40,14 @@ contract PriceFeeds {
 
         ) = BTC_USD.latestRoundData();
         //divide the price by 10 ** 8 in order to get price in USD
-        BTC = price / 1e18;
+        BTC = price / 1e8;
         return BTC;
     }
 
     function getEthPrice() public view returns (int ETH) {
         (, int price, , , ) = ETH_USD.latestRoundData();
 
-        ETH = price / 1e18;
+        ETH = price / 1e8;
         return ETH;
     }
 
@@ -59,7 +61,39 @@ contract PriceFeeds {
     function getDaiPrice() public view returns (int DAI) {
         (, int price, , , ) = DAI_USD.latestRoundData();
 
-        DAI = price / 1e18;
+        DAI = price / 1e8;
         return DAI;
+    }
+
+    function getBTCConversionRate(
+        int256 btcAmount
+    ) public view returns (int256) {
+        int256 btcPrice = getBtcPrice();
+        int256 btcAmountInUsd = (btcPrice * btcAmount);
+        return btcAmountInUsd;
+    }
+
+    function getETHConversionRate(
+        int256 ethAmount
+    ) public view returns (int256) {
+        int256 ethPrice = getEthPrice();
+        int256 ethAmountInUsd = (ethPrice * ethAmount);
+        return ethAmountInUsd;
+    }
+
+    function getGOLDConversionRate(
+        int256 xauAmount
+    ) public view returns (int256) {
+        int256 xauPrice = getGoldPrice();
+        int256 xauAmountInUsd = (xauPrice * xauAmount);
+        return xauAmountInUsd;
+    }
+
+    function getDAIConversionRate(
+        int256 daiAmount
+    ) public view returns (int256) {
+        int256 daiPrice = getDaiPrice();
+        int256 daiAmountInUsd = (daiPrice * daiAmount);
+        return daiAmountInUsd;
     }
 }
