@@ -33,7 +33,7 @@ To use this project, follow these steps:
 4. `GOERLI_RPC_URL`: This is url of the goerli testnet node you're working with. You can get setup with one for free from Alchemy
 
 5. Get testnet ETH
-   Head over to faucets.chain.link and get some tesnet ETH.
+   Head over to <a href = "https://faucets.chain.link/">faucets.chain.link</a> and get some tesnet ETH.
 
 6. Compile and deploy the contracts to the Goerli testnet
 
