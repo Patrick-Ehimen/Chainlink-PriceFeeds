@@ -1,12 +1,8 @@
 # Crypto Price Feeds
 
----
-
 This project uses hardhat and chainlink data feeds to retrieve the real-time prices for BTC/USD, ETH/USD, GOLD/USD, and DAI/USD. Users can also input a value for any of these currencies and get the equivalent amount in USD.
 
 # Prerequisites
-
----
 
 To use this project, you will need the following:
 
