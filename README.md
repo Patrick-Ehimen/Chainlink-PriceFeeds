@@ -1,6 +1,24 @@
-# Sample Hardhat Project
+# Crypto Price Feeds
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+---
+
+## This project uses hardhat and chainlink data feeds to retrieve the real-time prices for BTC/USD, ETH/USD, GOLD/USD, and DAI/USD. Users can also input a value for any of these currencies and get the equivalent amount in USD.
+
+# Prerequisites
+
+---
+
+To use this project, you will need the following:
+
+1. Node.js and npm (included with Node.js)
+2. Hardhat
+3. Chainlink
+
+---
+
+# QuickStart
+
+Patrick-Ehimen
 
 Try running some of the following tasks:
 
