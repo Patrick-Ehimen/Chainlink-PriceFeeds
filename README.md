@@ -27,3 +27,21 @@ To use this project, follow these steps:
 
 2. Setup environment variables
    You'll want to set your `GOERLI_RPC_URL` and `PRIVATE_KEY` as environment variables. You can create and add them to a `.env` file.
+
+3. `PRIVATE_KEY`: The private key of your account (like from metamask). NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT.
+
+4. `GOERLI_RPC_URL`: This is url of the goerli testnet node you're working with. You can get setup with one for free from Alchemy
+
+5. Get testnet ETH
+   Head over to faucets.chain.link and get some tesnet ETH.
+
+6. Compile and deploy the contracts to the Goerli testnet
+
+```npx hardhat compile
+npx hardhat run scripts/deploy.js --network goerli
+```
+
+---
+
+Here's the address of the deployed contract.
+0xfd1B7282C7D457a28B4F3177c6a8b1C7B6D2c20F.
