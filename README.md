@@ -10,11 +10,12 @@ To use this project, you will need the following:
 2. Hardhat
 3. Chainlink
 
----
-
 # QuickStart
 
-Patrick-Ehimen
+```git clone https://github.com/Patrick-Ehimen/Chainlink-PriceFeeds
+cd Chainlink-PriceFeeds
+npm install
+```
 
 Try running some of the following tasks:
 
