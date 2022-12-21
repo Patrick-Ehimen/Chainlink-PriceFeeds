@@ -18,12 +18,12 @@ cd Chainlink-PriceFeeds
 npm install
 ```
 
-Try running some of the following tasks:
+# Usage, Compiling and Deployment to a testnet.
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+To use this project, follow these steps:
+
+1. Start the Hardhat development environment:
+   `npx hardhat`
+
+2. Setup environment variables
+   You'll want to set your `GOERLI_RPC_URL` and `PRIVATE_KEY` as environment variables. You can create and add them to a `.env` file.
